@@ -87,6 +87,6 @@ document.getElementById('loadQuote').addEventListener("click", () => {
 let intervalID = setInterval( () => {
     randomizeBackgroundColor();
     printQuote();
-}, 5000);
+}, 20000);
 
 
