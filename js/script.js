@@ -59,18 +59,18 @@ function printQuote() {
     source.className = "source";
     source.textContent = quoteObject.source;
     quoteBox.appendChild(source);
-    //checks if citation/year is present creates and apend to #quote-box
+    //checks if citation/year is present creates and apend to p.source
     if(quoteObject.citation) {
         const citation = document.createElement("span");
         citation.className = "citation";
         citation.textContent = quoteObject.citation;
-        quoteBox.appendChild(citation);
+        source.appendChild(citation);
     };
     if (quoteObject.year) {
         const year = document.createElement("span");
         year.className = "year";
         year.textContent = quoteObject.year;
-        quoteBox.appendChild(year);
+        source.appendChild(year);
     };
 };
 
